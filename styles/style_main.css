@@ -37,7 +37,7 @@ html, body {
     width: 100vw;
     background-color: light-dark(var(--branco02));
     font-family: 'sarpanch';
-    color: light-dark(var(--branco01), var(--preto01));
+    color: light-dark(var(--branco01), var(--preto05));
     font-size: 2em;
     transition: 500ms ease;
 }
