@@ -40,9 +40,9 @@ body {
     body {
         height: 100vh;
         display: block;
-        background-color: var(--preto03);
+        background-color: var(--preto04);
         font-family: 'sarpanch';
-        color: var(--preto05);
+        color: var(--preto06);
     }
     
     main {
