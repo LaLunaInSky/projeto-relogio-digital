@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'sarpanch';
+    src: url(../fonts/Sarpanch-Medium.ttf);
+}
+
+:root {
+    /*Paleta de Sombras do Branco*/
+    --branco01: #FFFFFF;
+    --branco02: #F6F6F6;
+    --branco03: #D4D4D4;
+    --branco04: #B3B3B3;
+    --branco05: #919191;
+    --branco06: #6F6F6F;
+
+    /*Paleta de Sombras do Preto*/
+    --preto01: #000000;
+    --preto02: #3C3C3C;
+    --preto03: #5E5E5E;
+    --preto04: #808080;
+    --preto05: #A2A2A2;
+    --preto06: #C3C3C3;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    display: none;
+}
+
+@media (min-width:320px)  {
+    body {
+        height: 100vh;
+        display: block;
+        background-color: var(--preto03);
+        font-family: 'sarpanch';
+        color: var(--preto05);
+    }
+    
+    main {
+        height: 100%;
+        cursor: default;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mostrador {
+        display: flex;
+        padding: 10px;
+        width: 280px;
+        height: 80px;
+        font-size: 2em;
+        background-color: var(--preto01);
+        box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.473);
+        border-radius: 20px;
+    }
+    
+    .hora, .minuto, .segundo {
+        padding: 5px;
+        border-radius: 15px;
+        width: 100%;
+        text-align: center;
+        background-color: var(--preto02);
+    }
+    
+    .separador {
+        padding: 5px;
+    }
+}
+
+@media (min-width:480px)  {
+    .mostrador {
+        width: 430px;
+        height: 120px;
+        font-size: 3em;
+    }
+}
+
+@media (min-width:600px)  {
+    .mostrador {
+        width: 540px;
+        height: 150px;
+        font-size: 4em;
+    }
+}
+
+@media (min-width:801px)  {
+    .mostrador {
+        width: 740px;
+        height: 220px;
+        font-size: 6em;
+    }
+}
